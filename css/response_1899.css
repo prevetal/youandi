@@ -1,0 +1,457 @@
+@media print, (max-width: 1899px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion .item .data
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*----------------
+        Pagination
+    ----------------*/
+    .pagination
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .delivery
+    {
+        font-size: 16px;
+    }
+
+
+    header .menu .sub_menu .link .info
+    {
+        padding: 24px;
+    }
+
+    header .menu .sub_menu .link .name
+    {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .agree
+    {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+
+    .form .cols
+    {
+        margin-left: -40px;
+    }
+
+    .form .cols .col
+    {
+        width: calc(50% - 40px);
+        margin-left: 40px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+
+    .text_block ul li:before
+    {
+        top: 11px;
+    }
+
+
+
+    /*-----------------
+        Info blocks
+    -----------------*/
+    .info_blocks .item .title
+    {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .info_blocks .item .desc
+    {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+
+
+    /*-------------------
+        Category head
+    -------------------*/
+    .category_head .breadcrumbs
+    {
+        margin-bottom: 52px;
+    }
+
+    .category_head .category_name
+    {
+        padding: 0;
+    }
+
+    .category_head .category_desc
+    {
+        font-size: 20px;
+        line-height: 30px;
+
+        margin-top: 52px;
+    }
+
+
+
+    /*----------------
+        Tags cloud
+    ----------------*/
+    .tags_cloud .slider_wrap
+    {
+        padding: 0 84px;
+    }
+
+
+    .tags_cloud .tag a
+    {
+        font-size: 18px;
+        line-height: 22px;
+
+        padding: 20px 28px;
+    }
+
+
+
+    /*-------------------
+        Products head
+    -------------------*/
+    .products_head
+    {
+        margin-bottom: 32px;
+    }
+
+
+    .products_head .sort,
+    .products_head .nice-select .current
+    {
+        font-size: 18px;
+    }
+
+
+    .products_head .nice-select .list .list_item
+    {
+        font-size: 17px;
+        line-height: 21px;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .product .sticker
+    {
+        font-size: 16px;
+        line-height: 20px;
+
+        top: 20px;
+        left: 20px;
+
+        padding: 12px 28px;
+    }
+
+
+
+    .products .banner .title
+    {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+
+
+    /*-------------------
+        Cart checkout
+    -------------------*/
+    .cart_checkout .content
+    {
+        width: calc(100% - 360px);
+    }
+
+
+
+    /*---------------
+        Cart info
+    ---------------*/
+    .cart_info table th
+    {
+        font-size: 18px;
+        line-height: 22px;
+
+        padding: 24px 0;
+    }
+
+
+    .cart_info table td.thumb
+    {
+        width: 180px;
+        min-width: 180px;
+    }
+
+    .cart_info table td.price
+    {
+        width: 200px;
+        min-width: 200px;
+    }
+
+    .cart_info table td.info textarea
+    {
+        font-size: 18px;
+
+        padding: 15px 20px;
+    }
+
+
+    .cart_info .cart_total_price
+    {
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+    .cart_info .cart_total_price .price
+    {
+        min-width: 220px;
+    }
+
+
+
+    /*-------------------
+        Checkout info
+    -------------------*/
+    .checkout_info .data .bottom .agree
+    {
+        font-size: 18px;
+        line-height: 26px;
+
+        width: calc(50% - 64px);
+    }
+
+    .checkout_info .data .bottom .another_person_btn
+    {
+        width: calc(50% + 20px);
+    }
+
+
+    .checkout_info .delivery_info .methods label
+    {
+        font-size: 18px;
+        line-height: 26px;
+
+        padding: 24px 20px 20px;
+    }
+
+
+    .checkout_info .delivery_info .method_info .time
+    {
+        font-size: 17px;
+        line-height: 21px;
+    }
+
+    .checkout_info .delivery_info .method_info .desc
+    {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+
+    .checkout_info .agree
+    {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+
+
+    /*------------------------------------
+        Cart checkout - Other products
+    ------------------------------------*/
+    .cart_checkout .other_products .block_title
+    {
+        font-size: 30px;
+        line-height: 36px;
+
+        margin-bottom: 28px;
+    }
+
+
+
+    /*-----------------
+        Constructor
+    -----------------*/
+    .constructor .category label .info
+    {
+        padding: 24px;
+    }
+
+
+    .constructor .amount_colors label
+    {
+        width: calc(25% - 10px);
+    }
+
+
+    .constructor .options .option
+    {
+        width: calc(50% - 28px);
+    }
+
+
+
+    /*-------------
+        LK menu
+    -------------*/
+    .lk_menu
+    {
+        width: 312px;
+    }
+
+
+
+    /*----------------
+        LK content
+    ----------------*/
+    .lk_content
+    {
+        width: calc(100% - 364px);
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .buy,
+    .product_info .size,
+    .product_info .options
+    {
+        margin-top: 72px;
+    }
+
+
+    .product_info .options .option
+    {
+        width: calc(50% - 28px);
+    }
+
+
+
+    /*----------------
+        Info block
+    ----------------*/
+    .info_block .thumb
+    {
+        min-height: 513px;
+    }
+
+    .info_block .info .desc
+    {
+        font-size: 24px;
+        line-height: 38px;
+
+        width: 520px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding: 80px 0;
+    }
+
+
+    footer .contacts,
+    footer .messengers
+    {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+
+    footer .title
+    {
+        font-size: 24px;
+        line-height: 30px;
+
+        margin-bottom: 30px;
+    }
+
+
+    footer .links .items a
+    {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    #video_modal video
+    {
+        width: calc(100vw - 480px);
+    }
+
+
+    .modal .links
+    {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
