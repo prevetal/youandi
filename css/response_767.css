@@ -410,6 +410,22 @@
         padding: 6px 12px;
     }
 
+    .products .product .favorite_btn
+    {
+        top: auto;
+        bottom: 8px;
+
+        width: 48px;
+        height: 48px;
+    }
+
+    .products .product .favorite_btn.active:hover
+    {
+        color: #de1569;
+
+        background: #fff;
+    }
+
     .products .product .name
     {
         font-size: 16px;
@@ -1088,6 +1104,20 @@
     .product_info .buy .quike_buy_btn
     {
         margin-top: 12px;
+    }
+
+
+    .product_info .buy .favorite
+    {
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .product_info .buy .favorite_btn
+    {
+        margin-right: auto;
+        margin-left: auto;
     }
 
 

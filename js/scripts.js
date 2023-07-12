@@ -405,4 +405,12 @@ $(() => {
 			touch: false
 		})
 	})
+
+
+	// Товар в избранное
+	$('.product .favorite_btn, .product_info .buy .favorite_btn').click(function (e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active')
+	})
 })

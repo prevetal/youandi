@@ -445,6 +445,12 @@
         padding: 10px 24px;
     }
 
+    .products .product .favorite_btn
+    {
+        top: 12px;
+        right: 12px;
+    }
+
     .products .product .name
     {
         font-size: 18px;
@@ -1239,6 +1245,14 @@
         margin-left: 20px;
 
         letter-spacing: .05em;
+    }
+
+
+    .product_info .buy .favorite
+    {
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0;
     }
 
 

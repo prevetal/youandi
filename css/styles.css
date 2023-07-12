@@ -3675,6 +3675,75 @@ header .menu .sub_menu .link.active .info
 }
 
 
+.products .product .favorite_btn
+{
+    color: #4a1b01;
+
+    position: absolute;
+    z-index: 3;
+    top: 17px;
+    right: 17px;
+
+    display: flex;
+
+    width: 39px;
+    height: 39px;
+
+    transition: color .2s linear;
+
+    border-radius: 50%;
+    background: #fff;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.products .product .favorite_btn .icon
+{
+    display: block;
+
+    width: 20px;
+    height: 20px;
+}
+
+.products .product .favorite_btn .icon + .icon
+{
+    display: none;
+
+    width: 24px;
+    height: 24px;
+}
+
+
+.products .product .favorite_btn.active,
+.products .product .favorite_btn:hover
+{
+    color: #de1569;
+}
+
+.products .product .favorite_btn.active .icon,
+.products .product .favorite_btn:hover .icon
+{
+    display: none;
+}
+
+.products .product .favorite_btn.active .icon + .icon,
+.products .product .favorite_btn:hover .icon + .icon
+{
+    display: block;
+}
+
+
+.products .product .favorite_btn.active:hover
+{
+    color: #fff;
+
+    background: #de1569;
+}
+
+
 .products .product .thumb
 {
     position: relative;
@@ -4732,6 +4801,70 @@ header .menu .sub_menu .link.active .info
 .product_info .buy .quike_buy_btn:hover
 {
     color: #de1669;
+}
+
+
+.product_info .buy .favorite
+{
+    margin-left: 40px;
+}
+
+
+.product_info .buy .favorite_btn
+{
+    color: #4a1b01;
+    font-size: 14px;
+    font-weight: 700;
+
+    display: flex;
+
+    transition: color .2s linear;
+    text-transform: uppercase;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.product_info .buy .favorite_btn .icon
+{
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    margin-right: 9px;
+}
+
+.product_info .buy .favorite_btn .icon + .icon
+{
+    display: none;
+
+    width: 24px;
+    height: 24px;
+    margin-top: -2px;
+    margin-right: 7px;
+    margin-bottom: -2px;
+    margin-left: -2px;
+}
+
+
+.product_info .buy .favorite_btn.active,
+.product_info .buy .favorite_btn:hover
+{
+    color: #de1569;
+}
+
+.product_info .buy .favorite_btn.active .icon,
+.product_info .buy .favorite_btn:hover .icon
+{
+    display: none;
+}
+
+.product_info .buy .favorite_btn.active .icon + .icon,
+.product_info .buy .favorite_btn:hover .icon + .icon
+{
+    display: block;
 }
 
 

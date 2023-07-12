@@ -609,6 +609,12 @@
         padding: 8px 20px;
     }
 
+    .products .product .favorite_btn
+    {
+        top: 8px;
+        right: 8px;
+    }
+
     .products .product .thumb
     {
         margin-bottom: 16px;
@@ -1033,6 +1039,14 @@
     .product_info .options
     {
         margin-top: 40px;
+    }
+
+
+    .product_info .buy .favorite
+    {
+        width: auto;
+        margin-top: 0;
+        margin-left: 40px;
     }
 
 
