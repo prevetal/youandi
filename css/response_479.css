@@ -220,6 +220,11 @@
         height: 52px;
     }
 
+    .products .product .btns .buy_btn .icon
+    {
+        display: none;
+    }
+
     .products .product .btns .quike_buy_btn
     {
         font-size: 11px;
@@ -289,30 +294,45 @@
     ---------------*/
     .cart_info table tr
     {
-        min-height: 0;
-        padding: 20px 0;
+        min-height: 140px;
+        padding: 20px 0 20px 104px;
+    }
+
+
+    .cart_info table td
+    {
+        font-size: 16px;
+        line-height: 20px;
     }
 
 
     .cart_info table td.thumb
     {
-        position: relative;
-        top: 0;
-
-        margin-right: auto;
-        margin-bottom: 16px;
-        margin-left: auto;
+        width: 90px;
+        min-width: 90px;
+        height: 90px;
     }
 
 
-    .cart_info table td.info
+    .cart_info table td.amount .input
     {
-        padding-right: 0;
+        height: 40px;
+        padding: 0 36px;
     }
 
-    .cart_info table td.info .name
+    .cart_info table td.amount button
     {
-        text-align: center;
+        width: 28px;
+        height: 28px;
+    }
+
+
+    .cart_info table td.info textarea
+    {
+        font-size: 12px;
+
+        height: 60px;
+        padding: 8px 12px;
     }
 
 
@@ -353,20 +373,6 @@
     {
         font-size: 24px;
         line-height: 28px;
-    }
-
-
-    .checkout_info .delivery_info .methods label
-    {
-        font-size: 14px;
-        line-height: 20px;
-
-        padding: 16px;
-    }
-
-    .checkout_info .delivery_info .methods label .price
-    {
-        margin-top: 8px;
     }
 
 
@@ -421,9 +427,43 @@
         font-size: 11px;
     }
 
-    .products .product .btns .buy_btn .icon
+
+
+    .cart_checkout .cart_total
     {
-        display: none;
+        padding: 24px;
+    }
+
+
+    .cart_checkout .cart_total .block_title
+    {
+        font-size: 22px;
+    }
+
+
+    .cart_checkout .cart_total .prices .item
+    {
+        font-size: 14px;
+    }
+
+
+    .cart_checkout .cart_total .promocode
+    {
+        padding: 4px;
+    }
+
+
+    .cart_checkout .cart_total .promocode .input
+    {
+        font-size: 15px;
+
+        padding: 0 12px;
+    }
+
+
+    .cart_checkout .cart_total .promocode .submit_btn
+    {
+        font-size: 12px;
     }
 
 
@@ -519,11 +559,11 @@
     {
         position: relative;
 
+        order: 3;
+
         width: 100%;
         height: auto;
         margin-top: 12px;
-
-        order: 3;
     }
 
     .product_info .images .thumbs .swiper-button-next,

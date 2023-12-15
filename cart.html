@@ -27,7 +27,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 		<!-- Подключение файлов стилей -->
-		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/swiper-bundle.min.css">
 		<link rel="stylesheet" href="css/swiper.css">
 		<link rel="stylesheet" href="css/fancybox.css">
 		<link rel="stylesheet" href="css/datepicker.min.css">
@@ -522,7 +522,7 @@
 									</thead>
 
 									<tbody>
-										<tr>
+										<tr class="mob_padding_top">
 											<td class="thumb">
 												<a href="/">
 													<img data-src="images/tmp/text_carousel_img.jpg" alt="" class="lozad">
@@ -530,6 +530,12 @@
 											</td>
 
 											<td class="info alignleft">
+												<div class="not_available">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_warning"></use></svg>
+
+													<span>Товар недоступен для заказа в регионе Воронеж и будет удалён из заказа</span>
+												</div>
+
 												<div class="name">
 													<a href="/">Букет из 37 белых шоколадных роз</a>
 												</div>
@@ -614,16 +620,16 @@
 										</a>
 									</div>
 
-									<div class="cart_total_price">
+									<!-- <div class="cart_total_price">
 										<div class="name">Итого</div>
 										<div class="price">19 600 руб.</div>
-									</div>
+									</div> -->
 								</div>
 							</section>
 
 
 							<section class="products other_products mob_other_products">
-								<div class="block_title">С этим<br> товаром<br> покупают</div>
+								<div class="block_title">Вас может заинтересовать</div>
 
 								<div class="swiper-container">
 									<div class="swiper-wrapper">
@@ -631,6 +637,7 @@
 											<div class="product">
 												<a href="/" class="thumb">
 													<img data-src="images/tmp/text_carousel_img.jpg" alt="" class="lozad">
+													<img data-src="images/tmp/product_img.jpg" alt="" class="lozad">
 												</a>
 
 												<div class="info">
@@ -645,7 +652,6 @@
 													<div class="btns">
 														<button class="buy_btn full_w">
 															<div>
-																<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
 																<span>Добавить в заказ</span>
 															</div>
 														</button>
@@ -659,6 +665,7 @@
 											<div class="product">
 												<a href="/" class="thumb">
 													<img data-src="images/tmp/text_carousel_img.jpg" alt="" class="lozad">
+													<img data-src="images/tmp/product_img.jpg" alt="" class="lozad">
 												</a>
 
 												<div class="info">
@@ -673,7 +680,6 @@
 													<div class="btns">
 														<button class="buy_btn full_w">
 															<div>
-																<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
 																<span>Добавить в заказ</span>
 															</div>
 														</button>
@@ -686,6 +692,7 @@
 											<div class="product">
 												<a href="/" class="thumb">
 													<img data-src="images/tmp/text_carousel_img.jpg" alt="" class="lozad">
+													<img data-src="images/tmp/product_img.jpg" alt="" class="lozad">
 												</a>
 
 												<div class="info">
@@ -700,7 +707,6 @@
 													<div class="btns">
 														<button class="buy_btn full_w">
 															<div>
-																<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
 																<span>Добавить в заказ</span>
 															</div>
 														</button>
@@ -714,6 +720,7 @@
 											<div class="product">
 												<a href="/" class="thumb">
 													<img data-src="images/tmp/text_carousel_img.jpg" alt="" class="lozad">
+													<img data-src="images/tmp/product_img.jpg" alt="" class="lozad">
 												</a>
 
 												<div class="info">
@@ -728,7 +735,6 @@
 													<div class="btns">
 														<button class="buy_btn full_w">
 															<div>
-																<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
 																<span>Добавить в заказ</span>
 															</div>
 														</button>
@@ -750,6 +756,148 @@
 
 
 							<section class="checkout_info">
+								<form action="" class="form delivery_info block">
+									<div class="block_title">
+										Способ получения и адрес доставки <button class="btn">в Воронеже</button>
+									</div>
+
+									<div class="methods row">
+										<input type="radio" name="delivery_method" id="delivery_method1" checked>
+										<label for="delivery_method1" data-content=".method_info1">
+											<div class="check"></div>
+
+											<div class="address">Самовывоз</div>
+
+											<div class="row">
+												<div class="duration">от 2х дней</div>
+
+												<div class="price">Бесплатно</div>
+											</div>
+										</label>
+
+										<input type="radio" name="delivery_method" id="delivery_method3">
+										<label for="delivery_method3" data-content=".method_info3">
+											<div class="check"></div>
+
+											<div class="address">Экспресс-доставка</div>
+
+											<div class="row">
+												<div class="duration">от 4 часов</div>
+
+												<div class="price">400 руб</div>
+											</div>
+										</label>
+
+										<input type="radio" name="delivery_method" id="delivery_method4">
+										<label for="delivery_method4" data-content=".method_info4">
+											<div class="check"></div>
+
+											<div class="address">Доставка транспортной компанией</div>
+
+											<div class="row">
+												<div class="duration">от 2х дней</div>
+
+												<div class="price">400 руб</div>
+											</div>
+										</label>
+									</div>
+
+
+									<div class="method_info method_info1 method_info2" style="display: block;">
+										<div class="time">
+											<div><span>Пн-Пт</span> <span>10:00-19:00</span></div>
+											<div><span>Сб-Вс</span> <span>10:00-17:00</span></div>
+										</div>
+
+										<div class="desc">Самовывоз осуществляется из нашего магазина по адресу: 32км МКАДа (ТЦ Шелковый путь 1 этаж. павильон 168)<br> <a href="/">Посмотреть схему проезда</a></div>
+
+										<div class="columns row">
+											<div class="line width1of3">
+												<div class="label"><span>Дата самовывоза</span></div>
+
+												<input type="text" name="" value="" class="input date_input" readonly>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="method_info method_info3">
+										<div class="columns row">
+											<div class="line width1of3">
+												<div class="label"><span>Дата самовывоза</span></div>
+
+												<input type="text" name="" value="" class="input date_input">
+											</div>
+
+											<div class="line width1of3">
+												<div class="label"><span>Станция метро</span></div>
+
+												<select name="">
+													<option value="0" data-display="Выберите станцию"></option>
+													<option value="1">Вариант 1</option>
+													<option value="2">Вариант 2</option>
+													<option value="3">Вариант 3</option>
+												</select>
+											</div>
+
+											<div class="line width1of3">
+												<div class="label"><span>Время доставки</span></div>
+
+												<select name="">
+													<option value="0" data-display="Выберите время"></option>
+													<option value="1">10:00 - 12:00</option>
+													<option value="2">10:00 - 12:00</option>
+													<option value="3">10:00 - 12:00</option>
+												</select>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="method_info method_info4">
+										<div class="prices">
+											<div>Доставка в пределах МКАД стоит <b>400 ₽</b></div>
+											<div>Доставка за пределы МКАД стоит <b>400 ₽ + 30 ₽</b> за каждый километр от МКАДа</div>
+										</div>
+
+										<div class="line">
+											<div class="label"><span>Ваш город, улица и номер дома</span></div>
+
+											<div class="field">
+												<input type="text" name="" value="" class="input">
+											</div>
+										</div>
+
+										<div class="line">
+											<div class="label"><span>Номер квартиры, подъезда, домофона и пр.</span></div>
+
+											<div class="field">
+												<input type="text" name="" value="" class="input">
+											</div>
+										</div>
+
+										<div class="columns row">
+											<div class="line width1of3">
+												<div class="label"><span>Дата доставки</span></div>
+
+												<input type="text" name="" value="" class="input date_input">
+											</div>
+
+											<div class="line width1of3">
+												<div class="label"><span>Время доставки</span></div>
+
+												<select name="">
+													<option value="0" data-display="Выберите время"></option>
+													<option value="1" selected>10:00 - 12:00</option>
+													<option value="2">10:00 - 12:00</option>
+													<option value="3">10:00 - 12:00</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</form>
+
+
 								<form action="" class="data form block">
 									<div class="cols row">
 										<div class="col">
@@ -848,135 +996,6 @@
 								</form>
 
 
-								<form action="" class="form delivery_info block">
-									<div class="block_title">Способ получения и адрес доставки</div>
-
-									<div class="methods row">
-										<input type="radio" name="delivery_method" id="delivery_method1" checked>
-										<label for="delivery_method1" data-content=".method_info1">
-											<div class="address">Самовывоз из магазина<br> м. Коломенская</div>
-
-											<div class="price">Бесплатно</div>
-										</label>
-
-										<input type="radio" name="delivery_method" id="delivery_method2">
-										<label for="delivery_method2" data-content=".method_info2">
-											<div class="address">Самовывоз из магазина<br> м. Аннино</div>
-
-											<div class="price">Бесплатно</div>
-										</label>
-
-										<input type="radio" name="delivery_method" id="delivery_method3">
-										<label for="delivery_method3" data-content=".method_info3">
-											<div class="address">Курьерская доставка<br> до станции метро и МЦК</div>
-
-											<div class="price">350 ₽</div>
-										</label>
-
-										<input type="radio" name="delivery_method" id="delivery_method4">
-										<label for="delivery_method4" data-content=".method_info4">
-											<div class="address">Курьерская доставка<br> по Москве и области</div>
-
-											<div class="price">От 400 ₽</div>
-										</label>
-									</div>
-
-
-									<div class="method_info method_info1 method_info2" style="display: block;">
-										<div class="time">
-											<div><span>Пн-Пт</span> <span>10:00-19:00</span></div>
-											<div><span>Сб-Вс</span> <span>10:00-17:00</span></div>
-										</div>
-
-										<div class="desc">Самовывоз осуществляется из нашего магазина по адресу: 32км МКАДа (ТЦ Шелковый путь 1 этаж. павильон 168)<br> <a href="/">Посмотреть схему проезда</a></div>
-
-										<div class="columns row">
-											<div class="line width1of3">
-												<div class="label"><span>Дата самовывоза</span></div>
-
-												<input type="text" name="" value="" class="input date_input">
-											</div>
-										</div>
-									</div>
-
-
-									<div class="method_info method_info3">
-										<div class="columns row">
-											<div class="line width1of3">
-												<div class="label"><span>Дата самовывоза</span></div>
-
-												<input type="text" name="" value="" class="input date_input">
-											</div>
-
-											<div class="line width1of3">
-												<div class="label"><span>Станция метро</span></div>
-
-												<select name="">
-													<option value="0" data-display="Выберите станцию"></option>
-													<option value="1">Вариант 1</option>
-													<option value="2">Вариант 2</option>
-													<option value="3">Вариант 3</option>
-												</select>
-											</div>
-
-											<div class="line width1of3">
-												<div class="label"><span>Время доставки</span></div>
-
-												<select name="">
-													<option value="0" data-display="Выберите время"></option>
-													<option value="1">10:00 - 12:00</option>
-													<option value="2">10:00 - 12:00</option>
-													<option value="3">10:00 - 12:00</option>
-												</select>
-											</div>
-										</div>
-									</div>
-
-
-									<div class="method_info method_info4">
-										<div class="prices">
-											<div>Доставка в пределах МКАД стоит <b>400 ₽</b></div>
-											<div>Доставка за пределы МКАД стоит <b>400 ₽ + 30 ₽</b> за каждый километр от МКАДа</div>
-										</div>
-
-										<div class="line">
-											<div class="label"><span>Ваш город, улица и номер дома</span></div>
-
-											<div class="field">
-												<input type="text" name="" value="" class="input">
-											</div>
-										</div>
-
-										<div class="line">
-											<div class="label"><span>Номер квартиры, подъезда, домофона и пр.</span></div>
-
-											<div class="field">
-												<input type="text" name="" value="" class="input">
-											</div>
-										</div>
-
-										<div class="columns row">
-											<div class="line width1of3">
-												<div class="label"><span>Дата доставки</span></div>
-
-												<input type="text" name="" value="" class="input date_input">
-											</div>
-
-											<div class="line width1of3">
-												<div class="label"><span>Время доставки</span></div>
-
-												<select name="">
-													<option value="0" data-display="Выберите время"></option>
-													<option value="1" selected>10:00 - 12:00</option>
-													<option value="2">10:00 - 12:00</option>
-													<option value="3">10:00 - 12:00</option>
-												</select>
-											</div>
-										</div>
-									</div>
-								</form>
-
-
 								<form action="" class="form payment_info block">
 									<div class="block_title">Способ оплаты</div>
 
@@ -1010,134 +1029,183 @@
 										</div>
 									</div>
 
-									<div class="comment">
+									<!-- <div class="comment">
 										<div class="label">КОММЕНТАРИИ К ЗАКАЗУ:</div>
 
 										<div class="field">
 											<textarea name="" placeholder="Текст…"></textarea>
 										</div>
-									</div>
+									</div> -->
 								</form>
 
 
-								<div class="submit">
+								<section class="products other_products">
+									<div class="block_title">Вас может заинтересовать</div>
+
+									<div class="grid">
+										<div class="product">
+											<a href="/" class="thumb">
+												<button class="favorite_btn">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite2"></use></svg>
+												</button>
+
+												<img data-src="images/tmp/text_carousel_img.jpg" alt="" class="lozad">
+												<img data-src="images/tmp/product_img.jpg" alt="" class="lozad">
+											</a>
+
+											<div class="info">
+												<div class="name">
+													<a href="/">Букет из 37 белых шоколадных роз</a>
+												</div>
+
+												<div class="price">
+													<div>890 руб.</div>
+												</div>
+
+												<div class="btns">
+													<button class="buy_btn">
+														<div>
+															<span>В корзину</span>
+														</div>
+													</button>
+												</div>
+											</div>
+										</div>
+
+
+										<div class="product">
+											<a href="/" class="thumb">
+												<button class="favorite_btn">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite2"></use></svg>
+												</button>
+
+												<img data-src="images/tmp/text_carousel_img.jpg" alt="" class="lozad">
+												<img data-src="images/tmp/product_img.jpg" alt="" class="lozad">
+											</a>
+
+											<div class="info">
+												<div class="name">
+													<a href="/">Букет из 37 белых шоколадных роз</a>
+												</div>
+
+												<div class="price">
+													<div>890 руб.</div>
+												</div>
+
+												<div class="btns">
+													<button class="buy_btn">
+														<div>
+															<span>В корзину</span>
+														</div>
+													</button>
+												</div>
+											</div>
+										</div>
+
+
+										<div class="product">
+											<a href="/" class="thumb">
+												<button class="favorite_btn">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite2"></use></svg>
+												</button>
+
+												<img data-src="images/tmp/text_carousel_img.jpg" alt="" class="lozad">
+												<img data-src="images/tmp/product_img.jpg" alt="" class="lozad">
+											</a>
+
+											<div class="info">
+												<div class="name">
+													<a href="/">Букет из 37 белых шоколадных роз</a>
+												</div>
+
+												<div class="price">
+													<div>890 руб.</div>
+												</div>
+
+												<div class="btns">
+													<button class="buy_btn">
+														<div>
+															<span>В корзину</span>
+														</div>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+
+
+								<!-- <div class="submit">
 									<button type="submit" class="submit_btn">
 										<span>Оформить</span>
 									</button>
 
 									<div class="agree">Нажимая на кнопку, я соглашаюсь на <a href="/"> обработку персональных данных</a> и принимаю <a href="/">политику конфиденциальности</a></div>
-								</div>
+								</div> -->
 							</section>
 						</section>
 
 
-						<section class="products other_products">
-							<div class="block_title">С этим<br> товаром<br> покупают</div>
+						<section class="mob_fixed_panel">
+							<div class="total_price">
+								<div class="price">2780 руб.</div>
+								<div class="name">без учёта доставки</div>
+							</div>
 
-							<div class="list">
-								<div class="product">
-									<a href="/" class="thumb">
-										<img data-src="images/tmp/text_carousel_img.jpg" alt="" class="lozad">
-									</a>
+							<button type="button" class="order_btn" disabled>
+								<span>Оформить</span>
+							</button>
+						</section>
 
-									<div class="info">
-										<div class="name">
-											<a href="/">Букет из 37 белых шоколадных роз</a>
-										</div>
 
-										<div class="price">
-											<div>890 руб.</div>
-										</div>
+						<section class="cart_total">
+							<div class="block_title">Ваш заказ</div>
 
-										<div class="btns">
-											<button class="buy_btn full_w">
-												<div>
-													<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
-													<span>Добавить в заказ</span>
-												</div>
-											</button>
-										</div>
-									</div>
+							<div class="prices">
+								<div class="item">
+									<div class="label">1 товар</div>
+									<div class="points"></div>
+									<div class="price">2780 руб.</div>
 								</div>
 
-
-								<div class="product">
-									<a href="/" class="thumb">
-										<img data-src="images/tmp/text_carousel_img.jpg" alt="" class="lozad">
-									</a>
-
-									<div class="info">
-										<div class="name">
-											<a href="/">Букет из 37 белых шоколадных роз</a>
-										</div>
-
-										<div class="price">
-											<div>890 руб.</div>
-										</div>
-
-										<div class="btns">
-											<button class="buy_btn full_w">
-												<div>
-													<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
-													<span>Добавить в заказ</span>
-												</div>
-											</button>
-										</div>
-									</div>
+								<div class="item">
+									<div class="label">Комплектация товара</div>
+									<div class="points"></div>
+									<div class="price green">Бесплатно</div>
 								</div>
 
-
-								<div class="product">
-									<a href="/" class="thumb">
-										<img data-src="images/tmp/text_carousel_img.jpg" alt="" class="lozad">
-									</a>
-
-									<div class="info">
-										<div class="name">
-											<a href="/">Букет из 37 белых шоколадных роз</a>
-										</div>
-
-										<div class="price">
-											<div>890 руб.</div>
-										</div>
-
-										<div class="btns">
-											<button class="buy_btn full_w">
-												<div>
-													<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
-													<span>Добавить в заказ</span>
-												</div>
-											</button>
-										</div>
-									</div>
-								</div>
-
-
-								<div class="product">
-									<a href="/" class="thumb">
-										<img data-src="images/tmp/text_carousel_img.jpg" alt="" class="lozad">
-									</a>
-
-									<div class="info">
-										<div class="name">
-											<a href="/">Букет из 37 белых шоколадных роз</a>
-										</div>
-
-										<div class="price">
-											<div>890 руб.</div>
-										</div>
-
-										<div class="btns">
-											<button class="buy_btn full_w">
-												<div>
-													<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
-													<span>Добавить в заказ</span>
-												</div>
-											</button>
-										</div>
-									</div>
+								<div class="item">
+									<div class="label">Доставка</div>
+									<div class="points"></div>
+									<div class="price">400 руб.</div>
 								</div>
 							</div>
+
+							<div class="promocode">
+								<input type="text" name="" value="" class="input" placeholder="Промокод">
+
+								<button type="submit" class="submit_btn">ПРИМЕНИТЬ</button>
+							</div>
+
+							<div class="total_price">
+								<div class="name">Итого без учёта доставки:</div>
+								<div class="price">2780 руб.</div>
+							</div>
+
+							<button type="button" class="order_btn" disabled>
+								<span>Оформить заказ</span>
+							</button>
+
+							<div class="comment">
+								<div class="label">Комментарий к заказу</div>
+
+								<textarea name="" placeholder="Текст..."></textarea>
+							</div>
+
+							<div class="agree">Соглашаюсь с <a href="/">политикой конфиденциальности</a> и <a href="/">договором публичной оферты</a></div>
 						</section>
 					</div>
 				</section>
@@ -1442,7 +1510,7 @@
 		<!-- Подключение javascript файлов -->
 		<script src="js/jquery-3.5.0.min.js"></script>
 		<script src="js/lozad.min.js"></script>
-		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
 		<script src="js/inputmask.min.js"></script>
 		<script src="js/nice-select.js"></script>
 		<script src="js/fancybox.min.js"></script>

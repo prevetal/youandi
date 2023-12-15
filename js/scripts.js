@@ -129,16 +129,16 @@ $(() => {
 			},
 			breakpoints: {
 				0: {
-					spaceBetween: 12,
-					slidesPerView: 2
-				},
-				480: {
-					spaceBetween: 20,
-					slidesPerView: 2
+					spaceBetween: 33,
+					slidesPerView: 'auto'
 				},
 				768: {
 					spaceBetween: 24,
 					slidesPerView: 2
+				},
+				1024: {
+					spaceBetween: 24,
+					slidesPerView: 3
 				}
 			},
 			on: {
@@ -413,4 +413,26 @@ $(() => {
 
 		$(this).toggleClass('active')
 	})
+
+
+	// Моб фикс панель
+	const boxes = document.querySelectorAll('.cart_total')
+
+	function scrollTracking(entries) {
+		for (const entry of entries) {
+			if (entry.intersectionRatio >= 0.2 && entry.target.classList.contains('cart_total')) {
+				$('.cart_checkout .mob_fixed_panel').hide()
+			}
+
+			if (entry.intersectionRatio <= 0.2 && entry.target.classList.contains('cart_total')) {
+				$('.cart_checkout .mob_fixed_panel').show()
+			}
+		}
+	}
+
+	const observer = new IntersectionObserver(scrollTracking, {
+		threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+	})
+
+	boxes.forEach(element => observer.observe(element))
 })

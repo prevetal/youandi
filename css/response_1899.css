@@ -218,7 +218,108 @@
     -------------------*/
     .cart_checkout .content
     {
-        width: calc(100% - 360px);
+        width: calc(100% - 384px);
+    }
+
+
+
+    .cart_checkout .cart_total
+    {
+        width: 360px;
+        padding: 24px;
+    }
+
+
+    .cart_checkout .cart_total .block_title
+    {
+        font-size: 28px;
+    }
+
+
+    .cart_checkout .cart_total .prices .item
+    {
+        font-size: 16px;
+    }
+
+    .cart_checkout .cart_total .prices .item + .item
+    {
+        margin-top: 16px;
+    }
+
+
+    .cart_checkout .cart_total .promocode
+    {
+        margin-top: 20px;
+        padding: 6px;
+    }
+
+
+    .cart_checkout .cart_total .promocode .input
+    {
+        font-size: 16px;
+
+        width: calc(50% - 4px);
+        height: 36px;
+    }
+
+
+    .cart_checkout .cart_total .promocode .submit_btn
+    {
+        font-size: 13px;
+
+        width: calc(50% - 4px);
+        height: 36px;
+    }
+
+
+    .cart_checkout .cart_total .total_price
+    {
+        font-size: 18px;
+
+        margin-top: 20px;
+    }
+
+
+    .cart_checkout .cart_total .total_price .price
+    {
+        font-size: 28px;
+
+        margin-top: 4px;
+    }
+
+
+    .cart_checkout .cart_total .order_btn
+    {
+        font-size: 15px;
+
+        height: 64px;
+        margin-top: 20px;
+        padding: 5px;
+    }
+
+
+    .cart_checkout .cart_total .comment .label
+    {
+        font-size: 12px;
+
+        padding: 16px 16px 0;
+    }
+
+
+    .cart_checkout .cart_total .comment textarea
+    {
+        font-size: 16px;
+
+        height: 120px;
+        padding: 40px 16px 16px;
+    }
+
+
+    .cart_checkout .cart_total .agree
+    {
+        font-size: 12px;
+
+        margin-top: 16px;
     }
 
 
@@ -241,11 +342,14 @@
         min-width: 180px;
     }
 
-    .cart_info table td.price
+
+    .cart_info table td.info .not_available
     {
-        width: 200px;
-        min-width: 200px;
+        font-size: 16px;
+
+        padding: 10px;
     }
+
 
     .cart_info table td.info textarea
     {
@@ -291,6 +395,22 @@
         line-height: 26px;
 
         padding: 24px 20px 20px;
+    }
+
+    .checkout_info .delivery_info .methods label .check
+    {
+        top: 23px;
+        left: 20px;
+    }
+
+    .checkout_info .delivery_info .methods label .address
+    {
+        margin-bottom: 40px;
+    }
+
+    .checkout_info .delivery_info .methods label .duration
+    {
+        font-size: 18px;
     }
 
 

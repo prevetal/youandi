@@ -498,7 +498,6 @@
     .products .product .btns .quike_buy_btn:hover
     {
         color: #de3179;
-
         background: none;
     }
 
@@ -565,16 +564,6 @@
 
 
 
-    /*-------------------
-        Cart checkout
-    -------------------*/
-    .cart_checkout .content
-    {
-        width: calc(100% - 340px);
-    }
-
-
-
     /*---------------
         Cart info
     ---------------*/
@@ -610,6 +599,26 @@
         width: 140px;
         min-width: 140px;
     }
+
+
+    .cart_info table td.info .not_available
+    {
+        font-size: 12px;
+
+        padding: 8px;
+    }
+
+    .cart_info table td.info .not_available .icon
+    {
+        width: 36px;
+        height: 36px;
+    }
+
+    .cart_info table td.info .not_available span
+    {
+        width: calc(100% - 46px);
+    }
+
 
     .cart_info table td.info .name
     {
@@ -781,9 +790,20 @@
         padding: 20px;
     }
 
-    .checkout_info .delivery_info .methods label .price
+    .checkout_info .delivery_info .methods label .check
     {
-        margin-top: 16px;
+        top: 17px;
+        left: 20px;
+    }
+
+    .checkout_info .delivery_info .methods label .address
+    {
+        margin-bottom: 24px;
+    }
+
+    .checkout_info .delivery_info .methods label .duration
+    {
+        font-size: 16px;
     }
 
 

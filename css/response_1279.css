@@ -83,17 +83,16 @@
     {
         display: flex;
         overflow: auto;
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: flex-start;
 
         height: 100%;
         min-height: -moz-available;
         min-height: -webkit-fill-available;
         min-height:         fill-available;
         padding: 0;
-
-        justify-content: flex-start;
-        align-items: flex-start;
-        align-content: flex-start;
-        flex-wrap: wrap;
     }
 
     header .mob_scroll > *
@@ -105,9 +104,9 @@
 
     header .info
     {
-        padding: 20px 0;
-
         order: 2;
+
+        padding: 20px 0;
     }
 
 
@@ -491,18 +490,18 @@
 
     .info_blocks .item .thumb
     {
+        order: 1;
+
         width: 33.333%;
         min-height: 230px;
-
-        order: 1;
     }
 
 
     .info_blocks .item .info
     {
-        width: calc(66.666% - 24px);
-
         order: 2;
+
+        width: calc(66.666% - 24px);
     }
 
     .info_blocks .item .title
@@ -707,6 +706,13 @@
     }
 
 
+    .cart_checkout .cart_total
+    {
+        width: 100%;
+        padding: 40px;
+    }
+
+
 
     /*-------------------
         Checkout info
@@ -772,10 +778,6 @@
     .cart_checkout .other_products
     {
         display: none;
-
-        width: 100%;
-        margin-top: 60px;
-        padding: 32px;
     }
 
 
@@ -793,31 +795,6 @@
     }
 
 
-    .cart_checkout .other_products .list
-    {
-        display: flex;
-
-        margin-bottom: -20px;
-        margin-left: -20px;
-
-        justify-content: flex-start;
-        align-items: flex-start;
-        align-content: flex-start;
-        flex-wrap: wrap;
-    }
-
-    .cart_checkout .other_products .product
-    {
-        width: calc(25% - 20px);
-        margin-bottom: 20px;
-        margin-left: 20px;
-    }
-
-    .cart_checkout .other_products .product + .product
-    {
-        margin-top: 0;
-    }
-
     .cart_checkout .other_products .product .btns .buy_btn.full_w
     {
         font-size: 13px;
@@ -826,10 +803,15 @@
     }
 
 
-
-    .mob_other_products
+    .products.mob_other_products
     {
         display: block !important;
+    }
+
+
+    .products.mob_other_products .swiper-container
+    {
+        padding: 0 52px;
     }
 
 

@@ -221,17 +221,16 @@
         position: relative;
 
         display: flex;
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: flex-start;
 
         min-height: 181px;
         padding: 20px 0 20px 164px;
 
         border-top: 1px solid #4a1b0080;
         border-bottom: 1px solid #4a1b0080;
-
-        justify-content: flex-start;
-        align-items: flex-start;
-        align-content: flex-start;
-        flex-wrap: wrap;
     }
 
     .cart_info table tr + tr
@@ -290,7 +289,6 @@
     .cart_info table td.price:before,
     .cart_info table td.amount:before
     {
-        color: var(--text_color);
         font-size: 12px;
         font-weight: 500;
         line-height: 16px;
@@ -311,6 +309,7 @@
         text-transform: none;
 
         opacity: .5;
+        color: var(--text_color);
     }
 
 
@@ -407,7 +406,33 @@
 
     .checkout_info .delivery_info .methods label
     {
-        width: calc(33.333% - 20px);
+        font-size: 15px;
+        line-height: 21px;
+
+        padding: 16px;
+    }
+
+
+    .checkout_info .delivery_info .methods label .address
+    {
+        margin-bottom: 20px;
+        padding-left: 32px;
+    }
+
+
+    .checkout_info .delivery_info .methods label .check
+    {
+        top: 16px;
+        left: 16px;
+
+        width: 20px;
+        height: 20px;
+    }
+
+    .checkout_info .delivery_info .methods label .check:before
+    {
+        width: 10px;
+        height: 10px;
     }
 
 
@@ -643,10 +668,10 @@
     .info_block .thumb + .info,
     .info_block .info
     {
+        order: 2;
+
         width: 100%;
         padding: 60px 32px 0;
-
-        order: 2;
     }
 
     .info_block .info .title
@@ -760,9 +785,9 @@
 
     footer .socials
     {
-        margin-top: 32px;
-
         justify-content: center;
+
+        margin-top: 32px;
     }
 
 
