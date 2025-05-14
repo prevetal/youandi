@@ -466,14 +466,16 @@
     }
 
 
-    .products .product .btns .buy_btn
+    .products .product .btns .buy_btn,
+    .products .product .btns .quike_buy_btn
     {
         width: 100%;
         height: 64px;
         padding: 5px;
     }
 
-    .products .product .btns .buy_btn.full_w
+    .products .product .btns .buy_btn.full_w,
+    .products .product .btns .quike_buy_btn.full_w
     {
         width: calc(100% - 20px);
     }
@@ -483,24 +485,6 @@
         width: 100%;
         height: 64px;
     }
-
-    .products .product .btns .quike_buy_btn
-    {
-        width: 100%;
-        height: auto;
-        margin-top: 8px;
-        padding: 4px 0;
-
-        border: none;
-        border-radius: 0;
-    }
-
-    .products .product .btns .quike_buy_btn:hover
-    {
-        color: #de3179;
-        background: none;
-    }
-
 
 
 
@@ -1232,6 +1216,12 @@
     }
 
 
+    .product_info .buy
+    {
+        gap: 20px;
+    }
+
+
     .product_info .buy .amount
     {
         width: 168px;
@@ -1249,30 +1239,18 @@
         height: 48px;
     }
 
-    .product_info .buy .buy_btn
+    .product_info .buy .buy_btn,
+    .product_info .buy .quike_buy_btn
     {
-        width: 220px;
+        width: 200px;
         height: 60px;
-        margin-left: 20px;
         padding: 5px;
     }
 
+
     .product_info .buy .quike_buy_btn
     {
-        font-size: 13px;
-        line-height: 19px;
-
-        margin-left: 20px;
-
-        letter-spacing: .05em;
-    }
-
-
-    .product_info .buy .favorite
-    {
-        width: 100%;
-        margin-top: 20px;
-        margin-left: 0;
+        margin-left: -5px;
     }
 
 

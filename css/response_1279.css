@@ -631,10 +631,23 @@
         line-height: 26px;
     }
 
+
+    .products .product .btns
+    {
+        gap: 5px;
+    }
+
     .products .product .btns .buy_btn,
+    .products .product .btns .quike_buy_btn,
     .products .product .btns .not_available_btn
     {
         height: 60px;
+    }
+
+
+    .products .product .btns .quike_buy_btn
+    {
+        order: 2;
     }
 
 
@@ -1021,14 +1034,6 @@
     .product_info .options
     {
         margin-top: 40px;
-    }
-
-
-    .product_info .buy .favorite
-    {
-        width: auto;
-        margin-top: 0;
-        margin-left: 40px;
     }
 
 

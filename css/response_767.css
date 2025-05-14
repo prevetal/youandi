@@ -1215,21 +1215,13 @@
 
     .product_info .buy .quike_buy_btn
     {
-        margin-top: 12px;
+        order: 3;
     }
 
 
     .product_info .buy .favorite
     {
-        width: 100%;
-        margin-top: 20px;
         margin-left: 0;
-    }
-
-    .product_info .buy .favorite_btn
-    {
-        margin-right: auto;
-        margin-left: auto;
     }
 
 
